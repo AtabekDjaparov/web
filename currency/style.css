@@ -1,0 +1,44 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e8f5ee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  max-width: 360px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form { display: flex; flex-direction: column; gap: 12px; margin: 18px 0; }
+label { text-align: left; font-size: 14px; color: #555; }
+
+input, select {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1f8a55;
+  color: white;
+  cursor: pointer;
+}
+
+#result { font-size: 24px; font-weight: bold; }
+#info { font-size: 13px; color: #777; margin: 8px 0 14px; }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конвертер валют</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Конвертер валют</h1>
+
+    <form id="form">
+      <label>Сумма
+        <input id="amount" type="number" value="100" min="0" step="any" required>
+      </label>
+
+      <label>Из
+        <select id="from">
+          <option value="USD">USD - доллар США</option>
+          <option value="EUR">EUR - евро</option>
+          <option value="KGS">KGS - сом</option>
+          <option value="RUB">RUB - рубль</option>
+          <option value="KZT">KZT - тенге</option>
+          <option value="CNY">CNY - юань</option>
+        </select>
+      </label>
+
+      <label>В
+        <select id="to">
+          <option value="KGS">KGS - сом</option>
+          <option value="USD">USD - доллар США</option>
+          <option value="EUR">EUR - евро</option>
+          <option value="RUB">RUB - рубль</option>
+          <option value="KZT">KZT - тенге</option>
+          <option value="CNY">CNY - юань</option>
+        </select>
+      </label>
+
+      <button type="submit">Конвертировать</button>
+    </form>
+
+    <p id="result"></p>
+    <p id="info"></p>
+
+    <small><a href="https://www.exchangerate-api.com" target="_blank">Rates By Exchange Rate API</a></small>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
